@@ -23,6 +23,20 @@ pub mod snft {
         inita.authority = authority;
         Ok(())
     }
+
+    // pub fn burn(ctx: Context<Burn>,nft: Pubkey) -> Result<()> {
+
+    //     Ok(())
+    // }
+
+    // pub fn sendtoken(ctx: Context<Sendtoken>,nft: Pubkey) -> Result<()> {
+
+    //     Ok(())
+    // }
+
+    // pub fn mintnft(ctx: Context<Sendtoken>,nft: Pubkey) -> Result<()> {
+    //     Ok(())
+    // }
 }
 
 #[derive(Accounts)]
@@ -34,8 +48,16 @@ pub struct Initialize<'info> {
     pub system_program: Program<'info, System>,
 }
 
+// #[derive(Accounts)]
+// pub struct Burn<'info> {
+//     pub nftAccount: Pubkey,
+//     #[account(mut)]
+//     pub user: Signer<'info>,
+// }
+
 #[account]
 pub struct MyAccount {
     pub data: u64,
     pub authority: Pubkey,
 }
+
