@@ -11,7 +11,7 @@ snft = "Bu4AF6Zo6zBFacLdLn53pYJdXQQbdMKSs3GT6w1dP8EL"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Devnet"
+cluster = "Mainnet"
 wallet = "/home/ubuntu/.config/solana/id.json"
 
 [scripts]
