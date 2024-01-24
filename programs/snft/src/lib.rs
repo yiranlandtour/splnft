@@ -24,7 +24,10 @@ pub mod anchor_spl_token {
             82, 
             ctx.accounts.token_program.key
         )?;
-
+        
+        initialize_collection(){//498a826683f0a0542b3729f12575eecf4033d39df9f3a5035cb64ac1d65cfe5a
+            OK();
+        }
         initialize_mint(
             CpiContext::new(
                 ctx.accounts.token_program.to_account_info(),
